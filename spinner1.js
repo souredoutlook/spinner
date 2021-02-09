@@ -1,16 +1,15 @@
 //spinner1.js
 
-const spinner1 = function(maxCycles){
-  let time = 100;
-  let frames = ['|','/','-','\\',]
-  let currentCycle = 0;
-  while (currentCycle < maxCycles){
-    for (const frame of frames){
-      setTimeout(()=>process.stdout.write(`\r${frame}     `),time);
-      time += 200;
-    } 
-    currentCycle += 1;
-  }
-  time += 200;
-  setTimeout(()=>process.stdout.write(`\r${frames[0]}     \n`),time);
-}
+setTimeout(()=>process.stdout.write('\r|     '), 100);
+setTimeout(()=>process.stdout.write('\r/     '), 300);
+setTimeout(()=>process.stdout.write('\r-     '), 500);
+setTimeout(()=>process.stdout.write('\r\\     '), 700);
+setTimeout(()=>process.stdout.write('\r|     '), 900);
+setTimeout(()=>process.stdout.write('\r/     '), 1100);
+setTimeout(()=>process.stdout.write('\r-     '), 1300);
+setTimeout(()=>process.stdout.write('\r\\     '), 1500);
+setTimeout(()=>process.stdout.write('\r|     '), 1700);
+setTimeout(()=>process.stdout.write('\r/     '), 1900);
+setTimeout(()=>process.stdout.write('\r-     '), 2100);
+setTimeout(()=>process.stdout.write('\r\\     '), 2300);
+setTimeout(()=>process.stdout.write('\r|     \n'), 2500);
